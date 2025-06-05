@@ -196,3 +196,37 @@ li a:hover {
     font-size: 1.2rem;
   }
 }
+
+/** body link styles **/
+p a,
+ul a,
+li a {
+  position: relative;
+  font-weight: 500;
+  color: transparent;
+  background-image: linear-gradient(to right, #003366, #228B22); /* navy to forest green */
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
+}
+
+p a::after,
+ul a::after,
+li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #003366, #228B22);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+p a:hover::after,
+ul a:hover::after,
+li a:hover::after {
+  transform: scaleX(1);
+}
