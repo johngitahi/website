@@ -175,3 +175,24 @@ li a:hover {
     font-size: 1.5em;
   }
 }
+
+@media screen and (max-width: 679px) {
+  p, ul {
+    font-size: 1rem; /* or 16px */
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  header {
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  .title a {
+    font-size: 1.2rem;
+  }
+}
