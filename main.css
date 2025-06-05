@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 1cm;
+  font-size: 1.6em;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px dotted currentColor;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p,
+ul {
+  font-style: normal;
+  font-size: 24px;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* Blog specific styles */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.2em;
+}
+
+.title a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+#gr_book_title a {
+    text-decoration: none;
+}
+
+#gr_book_title a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 680px) {
+  body {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+
+  p,
+  ul {
+    font-size: 1.4rem;
+  }
+
+  h2,
+  header {
+    font-size: 1.5em;
+  }
+}
