@@ -11,35 +11,40 @@
 	<title>Gitahi</title>
 	<meta name="description" value="Personal website of John Gitahi of Kenya">
 	<link rel="stylesheet" href="main.css">
-	<script src="analytics.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.1/3Dmol.js"></script>
     </head>
     <body>
 	<main>
-	    <section id="about" class="about">
 		<header>
 		    <a href="index.html">Home</a>
 		    <a href="notes.html">Notes</a>
 		</header>
-		<h1>Bio</h1>
-		<p>I am John Gitahi</p>
-		<p>I am available for short-term contract work as a programmer(with experience in web development in Python and Go, technical writing, and training). Send me a message if you have work you think I can do</p>
-		<h1>What I am doing now</h1>
-		<ul>
-		  <li>Creating a <a href="https://lyricszetu.netlify.app">lyrics site</a> dedicated to music in Kenyan native languages</li>
-		  <li>Designing a experimental MRS, akin to OpenMRS</li>
-		  <li>Reading <span id="gr_book_title"> </span></li>
-          <li>Working on a few short fiction projects</li>
-          <li>Playing Polytopia</li>
-		</ul>
-
-		<h1>Find me here</h1>
-		<ul>
+		<section id="bio">
+		  <h1>Bio</h1>
+		  <p>I am John Gitahi</p>
+		  <p>I am available for short-term contract work as a programmer(with experience in web development in Python and Go, technical writing, and training). Send me a message if you have work you think I can do</p>
+		</section>
+		<div class="mol-container" id="mol"></div>
+		<section id="now">
+		  <h1>What I am doing now</h1>
+		  <ul>
+		    <li>Creating a <a href="https://lyricszetu.netlify.app">lyrics site</a> dedicated to music in Kenyan native languages</li>
+		    <li>Designing a experimental MRS, akin to OpenMRS</li>
+		    <li>Reading <span id="gr_book_title"> </span></li>
+		    <li>Working on a few short fiction projects</li>
+		    <li>Playing Polytopia</li>
+		  </ul>
+		</section>
+		<section id="contact">
+		  <h1>Find me here</h1>
+		  <ul>
 		    <li><a href="mailto:gitahix@yahoo.com">Email</a></li>
 		    <li><a href="https://opl.to/gth">Everywhere else</a></li>
-		</ul>
-	    </section>
+		  </ul>
+		</section>
 	</main>
 
 	<script src="goodreads.js"></script>
+	<script src="mol.js"></script>
     </body>
 </html>

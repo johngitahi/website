@@ -116,3 +116,8 @@ li a {
   font-style: italic;
 }
 
+.mol-container {
+    width: auto;
+    height: 400px;
+    position: relative;
+}
